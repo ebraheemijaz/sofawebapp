@@ -1,0 +1,23 @@
+{
+    "sliderImages":[
+        "https://demos.creative-tim.com/material-kit/assets-old/img/bg2.jpg",
+        "https://demos.creative-tim.com/material-kit/assets-old/img/bg3.jpg",
+        "https://image.shutterstock.com/image-photo/modern-sofa-600w-426909265.jpg",
+        "https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+    ],
+    "FAQ":[
+        {
+            "question":"How do I order?",
+            "answer":"We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed."
+        },
+        {
+            "question":"How do I order?2",
+            "answer":"ss in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed."
+        },
+        {
+            "question":"How do I order?2",
+            "answer":"ss in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed."
+        }
+    ]
+}
