@@ -1,51 +1,89 @@
-<section class="pt-3 pt-md-5 pb-md-5  bg-gray-200">
-    <div class="container">
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-md-12">
+      <div
+        class="
+          bg-gradient-primary
+          shadow-primary
+          border-radius-lg
+          p-1
+          text-center
+        "
+      >
+        <h4 class="text-white mb-0">Products</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <app-app-product
+      style="cursor: pointer"
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let each of allProuctsIds"
+      [product]="allProucts[each]"
+      routerLink="/details/{{ each }}"
+    ></app-app-product>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-lg-3 mb-lg-0 mb-5 mt-8 mt-md-5 mt-lg-0">
+      <ul
+        class="
+          nav
+          flex-column
+          bg-white
+          border-radius-lg
+          p-3
+          position-sticky
+          top-10
+          shadow-lg
+        "
+      >
+        <li class="nav-item">
+          <a
+            class="nav-link text-dark d-flex align-items-center"
+            data-scroll=""
+            href="#general-terms"
+          >
+            All
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-dark d-flex align-items-center"
+            data-scroll=""
+            href="#general-terms"
+          >
+            Sofa type 1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-dark d-flex align-items-center"
+            data-scroll=""
+            href="#general-terms"
+          >
+            Sofa type 2
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-dark d-flex align-items-center"
+            data-scroll=""
+            href="#general-terms"
+          >
+            Sofa type 3
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-9">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="bg-gradient-primary shadow-primary border-radius-lg p-3"
-                ><h3 class="text-white mb-0">Products</h3></div>
-            </div>
-        </div>
-        <br>
-      <div class="row">
-        <div class="col-lg-3 mb-lg-0 mb-5 mt-8 mt-md-5 mt-lg-0">
-          <ul class="nav flex-column bg-white border-radius-lg p-3 position-sticky top-10 shadow-lg">
-            <li class="nav-item">
-              <a class="nav-link text-dark d-flex align-items-center" data-scroll="" href="#general-terms">
-                All
-              </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark d-flex align-items-center" data-scroll="" href="#general-terms">
-                  Sofa type 1
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark d-flex align-items-center" data-scroll="" href="#general-terms">
-                  Sofa type 2
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark d-flex align-items-center" data-scroll="" href="#general-terms">
-                  Sofa type 3
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div class="col-lg-9">
-           
-
-            <div class="container">
-                <div class="row">
-                  
-                  <a routerLink="/details">
-                      <app-app-product></app-app-product>
-
-                  </a>
-                  
-                </div>
-              </div>
+          <a routerLink="/details">
+            <app-app-product></app-app-product>
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </div> -->
+</div>

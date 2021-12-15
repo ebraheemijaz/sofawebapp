@@ -5,13 +5,13 @@ import { AppHomePageComponent } from './pages/app-home-page/app-home-page.compon
 import { AppProductPageComponent } from './pages/app-product-page/app-product-page.component';
 
 const routes: Routes = [
-  {path: '', component: AppHomePageComponent},
-  {path: 'product', component: AppProductPageComponent},
-  {path: 'details', component: AppProductDetailsPageComponent},
+  { path: '', component: AppHomePageComponent },
+  { path: 'product', component: AppProductPageComponent },
+  { path: 'details/:id', component: AppProductDetailsPageComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

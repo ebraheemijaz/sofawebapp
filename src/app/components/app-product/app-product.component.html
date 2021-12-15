@@ -1,23 +1,49 @@
-<div class="col-lg-4 col-md-6">
-    <div class="card mt-5">
-      <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-        <a class="d-block blur-shadow-image">
-          <img src="https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg" alt="img-blur-shadow" class="img-fluid border-radius-lg" loading="lazy">
-        </a>
-      <div class="colored-shadow" style="background-image: url(&quot;../assets/img/products/product-7-min.jpg&quot;);"></div></div>
-      <div class="card-body text-center">
-        <p class="mb-0 text-primary text-uppercase font-weight-normal text-sm">Trending</p>
-        <h5 class="font-weight-bold mt-3">
-          <a href="javascript:;">Burberry</a>
-        </h5>
-        <p class="mb-0">
-          Burberry's black textured-cottom bomber is finished with the label's iconic 'Weareable' jacket.
-        </p>
-      </div>
-      <div class="card-footer d-flex pt-0">
-        <p class="font-weight-normal my-auto">$890</p>
-        <i class="material-icons position-relative ms-auto text-dark text-lg me-1 my-auto" data-bs-toggle="tooltip"
-          data-bs-placement="top" title="" data-bs-original-title="Save to Wishlist">favorite</i>
-      </div>
+<div>
+  <div class="card mt-5">
+    <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
+      <a class="d-block blur-shadow-image">
+        <img
+          src="{{ product?.imageLink }}"
+          alt="img-blur-shadow"
+          class="img-fluid border-radius-lg"
+          loading="lazy"
+        />
+      </a>
+      <div
+        class="colored-shadow"
+        style="
+          background-image: url('../assets/img/products/product-7-min.jpg');
+        "
+      ></div>
+    </div>
+    <div class="card-body text-center">
+      <p class="mb-0 text-primary text-uppercase font-weight-normal text-sm">
+        {{ product?.trending_or_popular }}
+      </p>
+      <h5 class="font-weight-bold mt-3">
+        <a href="javascript:;">Burberry</a>
+      </h5>
+      <p class="mb-0">
+        {{ product?.description?.slice(0, 50) }}
+      </p>
+    </div>
+    <div class="card-footer d-flex pt-0">
+      <p class="font-weight-normal my-auto">{{ product?.Price }}</p>
+      <i
+        class="
+          material-icons
+          position-relative
+          ms-auto
+          text-dark text-lg
+          me-1
+          my-auto
+        "
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title=""
+        data-bs-original-title="Save to Wishlist"
+        >favorite</i
+      >
     </div>
   </div>
+</div>
