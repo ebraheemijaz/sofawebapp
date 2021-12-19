@@ -28,7 +28,13 @@
       "Price": "$156",
       "title": "title 1",
       "description": "lorjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg"
+      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product3.png",
+      "images": [
+        "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product4.jpg",
+        "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product1.jpg",
+        "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product3.png"
+      ],
+      "inStock": "In Stock / Sold Out"
     },
     "p2": {
       "id": "p2",
@@ -37,7 +43,8 @@
       "Price": "$1456",
       "title": "title 52",
       "description": "22 555losrjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg"
+      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg",
+      "inStock": "In Stock / Sold Out"
     },
     "p3": {
       "id": "p3",
@@ -46,7 +53,8 @@
       "Price": "$1456",
       "title": "title 52",
       "description": "22 555losrjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg"
+      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg",
+      "inStock": "In Stock / Sold Out"
     },
     "p4": {
       "id": "p4",
@@ -55,7 +63,14 @@
       "Price": "$1456",
       "title": "title 52",
       "description": "22 555losrjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg"
+      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg",
+      "inStock": "In Stock / Sold Out"
     }
+  },
+  "contactus": {
+    "email": "ebra@gmail.com",
+    "phonenumber": "+92351651651",
+    "fb": "https://www.facebook.com",
+    "formSubmissionLink": "https://hooks.slack.com/services/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"
   }
 }
