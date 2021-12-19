@@ -14,16 +14,26 @@ export interface IProduct {
   title: string;
   description: string;
   imageLink: string;
+  inStock: string;
+  images: string[];
 }
 
 export interface IProducts {
   [key: string]: IProduct;
 }
 
+export interface IContactUs {
+  email: string;
+  phonenumber: string;
+  fb: string;
+  formSubmissionLink: string;
+}
+
 export interface Idata {
   sliderImages: string[];
   FAQ: FAQ[];
   products: IProducts;
+  contactus: IContactUs;
 }
 
 @Injectable({
@@ -46,5 +56,13 @@ export class DataServiceService {
 
   getProducts(): IProducts {
     return this.data.products;
+  }
+
+  getProduct(id: string): IProduct {
+    return this.data.products[id];
+  }
+
+  getContactUs(): IContactUs {
+    return this.data.contactus;
   }
 }

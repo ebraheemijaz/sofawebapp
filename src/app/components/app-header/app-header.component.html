@@ -22,6 +22,7 @@
       >Buy Now</a
     >
     <button
+      (click)="collapsed = !collapsed"
       class="navbar-toggler shadow-none ms-2"
       type="button"
       data-bs-toggle="collapse"
@@ -37,7 +38,8 @@
       </span>
     </button>
     <div
-      class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
+      [ngClass]="collapsed ? 'collapse' : ''"
+      class="navbar-collapse w-100 pt-3 pb-2 py-lg-0"
       id="navigation"
     >
       <ul class="navbar-nav navbar-nav-hover mx-auto">
@@ -84,6 +86,7 @@
               align-items-center
             "
             role="button"
+            routerLink="/contactus"
           >
             Contact Us
           </a>

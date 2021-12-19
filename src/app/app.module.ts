@@ -8,6 +8,9 @@ import { AppHomePageComponent } from './pages/app-home-page/app-home-page.compon
 import { AppProductPageComponent } from './pages/app-product-page/app-product-page.component';
 import { AppProductComponent } from './components/app-product/app-product.component';
 import { AppProductDetailsPageComponent } from './components/app-product-details-page/app-product-details-page.component';
+import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { AppProductDetailsPageComponent } from './components/app-product-details
     AppHomePageComponent,
     AppProductPageComponent,
     AppProductComponent,
-    AppProductDetailsPageComponent
+    AppProductDetailsPageComponent,
+    ContactUsPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
