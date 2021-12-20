@@ -11,6 +11,7 @@ import { AppProductDetailsPageComponent } from './components/app-product-details
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppProductComponent,
     AppProductDetailsPageComponent,
     ContactUsPageComponent,
+    AddToCartComponent,
   ],
   imports: [
     BrowserModule,

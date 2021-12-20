@@ -3,10 +3,141 @@
     <div class="col-md-12">
       <div class="card card-body shadow-xl">
         <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-10 mx-auto text-center">
+              <div class="mb-md-5">
+                <h3>Contact us</h3>
+                <p>
+                  For further questions, including partnership opportunities,
+                  please email {{ contactInfo.email }} or contact using our
+                  contact form.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="card card-plain">
+                <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="input-group input-group-static mb-4">
+                          <label>Full Name</label>
+                          <input
+                            formControlName="name"
+                            type="text"
+                            class="form-control"
+                            placeholder="Full Name"
+                          />
+                          <span class="input-group-text"
+                            ><i class="material-icons">person</i></span
+                          >
+                          <p
+                            class="error"
+                            *ngIf="
+                              contactUsForm.get('name')?.value === '' &&
+                              contactUsForm.touched === true
+                            "
+                          >
+                            This field is required
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ps-md-2">
+                        <div class="input-group input-group-static mb-4">
+                          <label>Email</label>
+                          <input
+                            type="email"
+                            formControlName="email"
+                            class="form-control"
+                            placeholder="Email"
+                          />
+                          <span class="input-group-text"
+                            ><i class="material-icons">email</i></span
+                          >
+                          <p
+                            class="error"
+                            *ngIf="
+                              contactUsForm.get('email')?.value === '' &&
+                              contactUsForm.touched === true
+                            "
+                          >
+                            This field is required
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ps-md-2">
+                        <div class="input-group input-group-static mb-4">
+                          <label>Phone</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            formControlName="phone"
+                            placeholder="Phone Number"
+                          />
+                          <span class="input-group-text"
+                            ><i class="material-icons">phone</i></span
+                          >
+                          <p
+                            class="error"
+                            *ngIf="
+                              contactUsForm.get('phone')?.value === '' &&
+                              contactUsForm.touched === true
+                            "
+                          >
+                            This field is required
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-4 mt-md-0 mt-4">
+                      <div class="input-group input-group-static mb-4">
+                        <label>What can we help you?</label>
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          id="message"
+                          rows="6"
+                          formControlName="message"
+                          placeholder="Describe your problem in at least 250 characters"
+                        ></textarea>
+                        <p
+                          class="error"
+                          *ngIf="
+                            contactUsForm.get('message')?.value === '' &&
+                            contactUsForm.touched === true
+                          "
+                        >
+                          This field is required
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <button
+                          type="submit"
+                          class="btn bg-gradient-primary mt-4"
+                          [disabled]="!contactUsForm.valid"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
           <div class="row mt-sm-0 mt-5">
             <div class="col-lg-3 col-md-4 position-relative ms-lg-auto">
               <div class="p-3 text-center border-right-after">
-                <i class="material-icons text-gradient text-info text-5xl mb-3"
+                <i
+                  class="
+                    material-icons
+                    text-gradient text-primary text-5xl
+                    mb-3
+                  "
                   >email</i
                 >
                 <h6 class="mb-0">Email</h6>
@@ -17,7 +148,12 @@
             </div>
             <div class="col-lg-3 col-md-4 position-relative">
               <div class="p-3 text-center border-right-after">
-                <i class="material-icons text-gradient text-info text-5xl mb-3"
+                <i
+                  class="
+                    material-icons
+                    text-gradient text-primary text-5xl
+                    mb-3
+                  "
                   >call</i
                 >
                 <h6 class="mb-0">Phone</h6>
@@ -28,7 +164,12 @@
             </div>
             <div class="col-lg-3 col-md-4 me-lg-auto">
               <div class="p-3 text-center">
-                <i class="material-icons text-gradient text-info text-5xl mb-3"
+                <i
+                  class="
+                    material-icons
+                    text-gradient text-primary text-5xl
+                    mb-3
+                  "
                   >facebook</i
                 >
                 <h6 class="mb-0">FB</h6>
@@ -39,136 +180,6 @@
             </div>
           </div>
         </div>
-        <section class="py-md-7 py-5">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-8 col-10 mx-auto text-center">
-                <div class="mb-md-5">
-                  <h3>Contact us</h3>
-                  <p>
-                    For further questions, including partnership opportunities,
-                    please email {{ contactInfo.email }} or contact using our
-                    contact form.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="card card-plain">
-                  <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="input-group input-group-static mb-4">
-                            <label>Full Name</label>
-                            <input
-                              formControlName="name"
-                              type="text"
-                              class="form-control"
-                              placeholder="Full Name"
-                            />
-                            <span class="input-group-text"
-                              ><i class="material-icons">person</i></span
-                            >
-                            <p
-                              class="error"
-                              *ngIf="
-                                contactUsForm.get('name')?.value === '' &&
-                                contactUsForm.touched === true
-                              "
-                            >
-                              This field is required
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6 ps-md-2">
-                          <div class="input-group input-group-static mb-4">
-                            <label>Email</label>
-                            <input
-                              type="email"
-                              formControlName="email"
-                              class="form-control"
-                              placeholder="Email"
-                            />
-                            <span class="input-group-text"
-                              ><i class="material-icons">email</i></span
-                            >
-                            <p
-                              class="error"
-                              *ngIf="
-                                contactUsForm.get('email')?.value === '' &&
-                                contactUsForm.touched === true
-                              "
-                            >
-                              This field is required
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6 ps-md-2">
-                          <div class="input-group input-group-static mb-4">
-                            <label>Phone</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              formControlName="phone"
-                              placeholder="Phone Number"
-                            />
-                            <span class="input-group-text"
-                              ><i class="material-icons">phone</i></span
-                            >
-                            <p
-                              class="error"
-                              *ngIf="
-                                contactUsForm.get('phone')?.value === '' &&
-                                contactUsForm.touched === true
-                              "
-                            >
-                              This field is required
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group mb-4 mt-md-0 mt-4">
-                        <div class="input-group input-group-static mb-4">
-                          <label>What can we help you?</label>
-                          <textarea
-                            name="message"
-                            class="form-control"
-                            id="message"
-                            rows="6"
-                            formControlName="message"
-                            placeholder="Describe your problem in at least 250 characters"
-                          ></textarea>
-                          <p
-                            class="error"
-                            *ngIf="
-                              contactUsForm.get('message')?.value === '' &&
-                              contactUsForm.touched === true
-                            "
-                          >
-                            This field is required
-                          </p>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12 text-center">
-                          <button
-                            type="submit"
-                            class="btn bg-gradient-info mt-4"
-                            [disabled]="!contactUsForm.valid"
-                          >
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   </div>

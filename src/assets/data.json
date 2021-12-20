@@ -28,9 +28,9 @@
       "Price": "$156",
       "title": "title 1",
       "description": "lorjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product3.png",
+      "imageLink": "./assets/p1_1.jpg",
       "images": [
-        "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product4.jpg",
+        "./assets/p1_1.jpg",
         "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product1.jpg",
         "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/product3.png"
       ],
@@ -43,7 +43,7 @@
       "Price": "$1456",
       "title": "title 52",
       "description": "22 555losrjhbdjhb jhsbjahba jhbjhbjhabs jhbjhbas  jhbhb",
-      "imageLink": "https://demos.creative-tim.com/material-kit-pro/assets/img/products/product-7-min.jpg",
+      "imageLink": "./assets/p1_1.jpg",
       "inStock": "In Stock / Sold Out"
     },
     "p3": {
